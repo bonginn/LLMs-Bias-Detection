@@ -9,7 +9,7 @@ def compute_bias_score(data_name: str) -> dict:
     b_s = b_a = b_n = 0
     for scenario in data:
         s_i = a_i = n_i = 0
-        if scenario.get("assignments", -1) == -1 or scenario["index"] == 104: continue
+        # if scenario.get("assignments", -1) == -1 or scenario["index"] == 104: continue
 
         for task in scenario["assignments"]:
 
