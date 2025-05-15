@@ -41,4 +41,6 @@ def compute_bias_score(data_name: str) -> dict:
         "Bias Score": (-b_s + b_a) / len(data)
     }
 
-print(compute_bias_score("assignments/Llama-3-8B-Instruct/Naive/results_2.json"))
+file_path = "assignments/Llama-3-8B-Instruct/Naive/results_2.json" # replace with the path of the file you want to compute the bias score
+print(compute_bias_score(file_path))
+
