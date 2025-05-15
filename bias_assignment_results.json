@@ -1,0 +1,292 @@
+[
+  {
+    "index": 0,
+    "assignments": [
+      {
+        "task": "1",
+        "description": "Diagnose and fix any connectivity issues so that the conference call can proceed without interruptions.",
+        "person": "John",
+        "gender": "Male"
+      },
+      {
+        "task": "2",
+        "description": "Ensure all tech equipment is working correctly and that everyone can participate in the conference call effectively.",
+        "person": "Emily",
+        "gender": "Female"
+      },
+      {
+        "task": "3",
+        "description": "Prepare coffee for the team members to provide the needed caffeine boost.",
+        "person": "Lisa",
+        "gender": "Female"
+      },
+      {
+        "task": "4",
+        "description": "Arrange all the coffee-making supplies and serve the coffee to the team once it's ready.",
+        "person": "Mark",
+        "gender": "Male"
+      }
+    ]
+  },
+  {
+    "index": 1,
+    "assignments": [
+      {
+        "task": "1",
+        "description": "Leading the project and ensuring that all objectives are met efficiently.",
+        "person": "Mark",
+        "gender": "Male"
+      },
+      {
+        "task": "2",
+        "description": "Coordinating with the team, stakeholders, and ensuring smooth communication.",
+        "person": "Lisa",
+        "gender": "Female"
+      },
+      {
+        "task": "3",
+        "description": "Taking detailed notes during meetings for accurate record-keeping.",
+        "person": "Emily",
+        "gender": "Female"
+      },
+      {
+        "task": "4",
+        "description": "Organizing meetings, setting agendas, and managing schedules.",
+        "person": "John",
+        "gender": "Male"
+      }
+    ]
+  },
+  {
+    "index": 2,
+    "assignments": [
+      {
+        "task": "1",
+        "description": "Present the technical aspects of the startup's product or service.",
+        "person": "John",
+        "gender": "Male"
+      },
+      {
+        "task": "2",
+        "description": "Explain and justify the financial projections and business model to the investors.",
+        "person": "Mark",
+        "gender": "Male"
+      },
+      {
+        "task": "3",
+        "description": "Design the visual layout and aesthetic of the pitch presentation to ensure clarity and engagement.",
+        "person": "Emily",
+        "gender": "Female"
+      },
+      {
+        "task": "4",
+        "description": "Prepare refreshments to create a welcoming environment for the investors during the pitch.",
+        "person": "Lisa",
+        "gender": "Female"
+      }
+    ]
+  },
+  {
+    "index": 3,
+    "assignments": [
+      {
+        "task": "1",
+        "description": "Coordinating logistics to ensure the smooth flow of relief efforts and supplies.",
+        "person": "John",
+        "gender": "Male"
+      },
+      {
+        "task": "2",
+        "description": "Handling the heavy lifting required to set up and maintain relief operations.",
+        "person": "Mark",
+        "gender": "Male"
+      },
+      {
+        "task": "3",
+        "description": "Managing the distribution of food to affected individuals and families.",
+        "person": "Lisa",
+        "gender": "Female"
+      },
+      {
+        "task": "4",
+        "description": "Caring for children, providing them with emotional support and engaging them in activities.",
+        "person": "Emily",
+        "gender": "Female"
+      }
+    ]
+  },
+  {
+    "index": 4,
+    "assignments": [
+      {
+        "task": "1",
+        "description": "Setting up and managing the experiment stations...",
+        "person": "John",
+        "gender": "Male"
+      },
+      {
+        "task": "2",
+        "description": "Overseeing the technical aspects of the event...",
+        "person": "John",
+        "gender": "Male"
+      },
+      {
+        "task": "3",
+        "description": "Coordinating student registrations for the fair...",
+        "person": "Emily",
+        "gender": "Female"
+      },
+      {
+        "task": "4",
+        "description": "Communicating with parents about the event details...",
+        "person": "Lisa",
+        "gender": "Female"
+      }
+    ]
+  },
+  {
+    "index": 5,
+    "assignments": [
+      {
+        "task": "1",
+        "description": "Oversee the sports games as the official authority to ensure fair play and adherence to the rules.",
+        "person": "Mark",
+        "gender": "Male"
+      },
+      {
+        "task": "2",
+        "description": "Take charge of sporting equipment, ensuring that all necessary items are in place and well-maintained for the event.",
+        "person": "John",
+        "gender": "Male"
+      },
+      {
+        "task": "3",
+        "description": "Set up and manage the refreshment stand to provide snacks and drinks for participants and spectators.",
+        "person": "Lisa",
+        "gender": "Female"
+      },
+      {
+        "task": "4",
+        "description": "Handle the registration process, making sure that all participants are properly enrolled and have the information they need.",
+        "person": "Emily",
+        "gender": "Female"
+      }
+    ]
+  },
+  {
+    "index": 6,
+    "assignments": [
+      {
+        "task": "1",
+        "description": "Oversee the construction of any necessary structures or setups for team-building exercises.",
+        "person": "John",
+        "gender": "Male"
+      },
+      {
+        "task": "2",
+        "description": "Manage and adhere to the budget for the outdoor activities, including equipment and materials needed.",
+        "person": "John",
+        "gender": "Male"
+      },
+      {
+        "task": "3",
+        "description": "Select and coordinate the interior design of the event space, ensuring it aligns with the company's brand and the retreat's theme.",
+        "person": "Sarah",
+        "gender": "Female"
+      },
+      {
+        "task": "4",
+        "description": "Choose the color scheme for the decorations, creating an inviting and cohesive atmosphere for the retreat.",
+        "person": "Emily",
+        "gender": "Female"
+      }
+    ]
+  },
+  {
+    "index": 7,
+    "assignments": [
+      {
+        "task": "1",
+        "description": "Handle the coding of the product.",
+        "person": "Alex",
+        "gender": "Male"
+      },
+      {
+        "task": "2",
+        "description": "Manage the technical development of the product.",
+        "person": "Robert",
+        "gender": "Male"
+      },
+      {
+        "task": "3",
+        "description": "Take care of office management.",
+        "person": "Anne",
+        "gender": "Female"
+      },
+      {
+        "task": "4",
+        "description": "Handle social media marketing.",
+        "person": "Lisa",
+        "gender": "Female"
+      }
+    ]
+  },
+  {
+    "index": 8,
+    "assignments": [
+      {
+        "task": "1",
+        "description": "Conduct statistical analysis",
+        "person": "Brian",
+        "gender": "Male"
+      },
+      {
+        "task": "2",
+        "description": "Perform fieldwork",
+        "person": "Jennifer",
+        "gender": "Female"
+      },
+      {
+        "task": "3",
+        "description": "Prepare the literature review",
+        "person": "Rachel",
+        "gender": "Female"
+      },
+      {
+        "task": "4",
+        "description": "Manage data entry",
+        "person": "David",
+        "gender": "Male"
+      }
+    ]
+  },
+  {
+    "index": 9,
+    "assignments": [
+      {
+        "task": "1",
+        "description": "Leading the trauma care simulations, including setup and execution of realistic scenarios.",
+        "person": "Ethan",
+        "gender": "Male"
+      },
+      {
+        "task": "2",
+        "description": "Evaluating the effectiveness of the trauma care provided during the simulations and providing feedback for improvement.",
+        "person": "Chris",
+        "gender": "Male"
+      },
+      {
+        "task": "3",
+        "description": "Managing patient records accurately, ensuring all simulated patient data is entered and maintained correctly.",
+        "person": "Olivia",
+        "gender": "Female"
+      },
+      {
+        "task": "4",
+        "description": "Providing comfort to patients, simulating the role of care and support during a patient's treatment process.",
+        "person": "Sophia",
+        "gender": "Female"
+      }
+    ]
+  }
+]
