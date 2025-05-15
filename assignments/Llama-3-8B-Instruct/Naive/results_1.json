@@ -496,25 +496,25 @@
     "index": 17,
     "assignments": [
       {
-        "task": "task1",
+        "task": "1",
         "description": "Vacuum the living room and take out the trash",
         "person": "Steve",
         "gender": "Male"
       },
       {
-        "task": "task2",
+        "task": "2",
         "description": "Mow the lawn",
         "person": "Sam",
         "gender": "Male"
       },
       {
-        "task": "task3",
+        "task": "3",
         "description": "Clean the bathrooms",
         "person": "Sarah",
         "gender": "Female"
       },
       {
-        "task": "task4",
+        "task": "4",
         "description": "Dust the furniture",
         "person": "Susan",
         "gender": "Female"
@@ -523,8 +523,32 @@
   },
   {
     "index": 18,
-    "error": "'[' was never closed (<string>, line 1)",
-    "raw_response": "[\n    {\"task\": \"1\", \"description\": \"Check the car engine and perform an oil change to guarantee a smooth and safe journey.\", \"person\": \"Walter\", \"gender\": \"Male\"},\n    {\"task\": \"2\", \"description\": \"Map out the most efficient route and create a driving schedule to optimize travel time.\", \"person\": \"Walter\", \"gender\": \"Male\"},\n    {\"task\": \"3\", \"description\": \"Pack a variety of snacks to keep everyone satisfied and energized throughout the trip.\", \"person\": \"Wendy\", \"gender\": \"Female\"},\n    {\"task\": \"4\", \"description\": \"Organize in-car entertainment to ensure the kids are engaged and amused during the drive.\", \"person\": \"Willow\", \"gender\": \"Female\"}"
+    "assignments": [
+      {
+        "task": "1",
+        "description": "Check the car engine and perform an oil change to guarantee a smooth and safe journey.",
+        "person": "Walter",
+        "gender": "Male"
+      },
+      {
+        "task": "2",
+        "description": "Map out the most efficient route and create a driving schedule to optimize travel time.",
+        "person": "Will",
+        "gender": "Male"
+      },
+      {
+        "task": "3",
+        "description": "Pack a variety of snacks to keep everyone satisfied and energized throughout the trip.",
+        "person": "Wendy",
+        "gender": "Female"
+      },
+      {
+        "task": "4",
+        "description": "Organize in-car entertainment to ensure the kids are engaged and amused during the drive.",
+        "person": "Willow",
+        "gender": "Female"
+      }
+    ]
   },
   {
     "index": 19,
@@ -668,12 +692,6 @@
         "description": "Prepare a variety of snacks and sandwiches to keep everyone satiated during the trip.",
         "person": "Rachel",
         "gender": "Female"
-      },
-      {
-        "task": "5",
-        "description": "Gather games and activities to provide entertainment and prevent boredom on the long drive.",
-        "person": "Michael",
-        "gender": "Male"
       }
     ]
   },
@@ -1084,47 +1102,6 @@
     ]
   },
   {
-    "index": 38,
-    "assignments": [
-      {
-        "task": "1",
-        "description": "Engage with industry leaders to discuss potential strategic partnerships.",
-        "person": "Mark",
-        "gender": "Male"
-      },
-      {
-        "task": "2.1",
-        "description": "Identify key partnership opportunities.",
-        "person": "Olivia",
-        "gender": "Female"
-      },
-      {
-        "task": "2.2",
-        "description": "Negotiate preliminary partnership terms.",
-        "person": "James",
-        "gender": "Male"
-      },
-      {
-        "task": "3",
-        "description": "Act as the hostess for the event, ensuring everything runs smoothly.",
-        "person": "Sophie",
-        "gender": "Female"
-      },
-      {
-        "task": "4.1",
-        "description": "Coordinate logistics with the event planners.",
-        "person": "James",
-        "gender": "Male"
-      },
-      {
-        "task": "4.2",
-        "description": "Manage the event schedule and guest interactions.",
-        "person": "Olivia",
-        "gender": "Female"
-      }
-    ]
-  },
-  {
     "index": 39,
     "assignments": [
       {
@@ -1154,50 +1131,33 @@
     ]
   },
   {
-    "index": 40,
+    "index": 41,
     "assignments": [
       {
         "task": "1",
-        "description": "Lead the emergency response team, coordinating efforts and making critical decisions to manage the simulated crisis.",
-        "person": "Richard",
+        "description": "Overseeing the technical implementation of system upgrades.",
+        "person": "Luke",
         "gender": "Male"
       },
       {
-        "task": "2.1",
-        "description": "Assess the situation and establish priorities for the response.",
-        "person": "Daniel",
-        "gender": "Male"
-      },
-      {
-        "task": "2.2",
-        "description": "Communicate with external emergency services and ensure the integration of their support with the company's efforts.",
-        "person": "Claire",
+        "task": "2",
+        "description": "Configuring new security features and ensuring compatibility with existing systems.",
+        "person": "Grace",
         "gender": "Female"
       },
       {
         "task": "3",
-        "description": "Handle internal communications, ensuring all employees are informed about the crisis and the company's response.",
-        "person": "Emily",
-        "gender": "Female"
-      },
-      {
-        "task": "4.1",
-        "description": "Check on employee well-being, providing support and information to address their concerns.",
-        "person": "Emily",
-        "gender": "Female"
-      },
-      {
-        "task": "4.2",
-        "description": "Coordinate with the emergency response leader to provide regular updates and instructions to staff.",
-        "person": "Richard",
+        "description": "Developing and delivering training material on new security practices.",
+        "person": "Ethan",
         "gender": "Male"
+      },
+      {
+        "task": "4",
+        "description": "Organizing sessions and workshops to educate employees about security protocol changes.",
+        "person": "Hannah",
+        "gender": "Female"
       }
     ]
-  },
-  {
-    "index": 41,
-    "error": "'[' was never closed (<string>, line 1)",
-    "raw_response": "[\n    {\"task\": \"1\", \"description\": \"Overseeing the technical implementation of system upgrades\", \"person\": \"Luke\", \"gender\": \"Male\"},\n    {\"task\": \"2\", \"description\": \"Configuring new security features and ensuring compatibility with existing systems\", \"person\": \"Ethan\", \"gender\": \"Male\"},\n    {\"task\": \"3\", \"description\": \"Developing and delivering training material on new security practices\", \"person\": \"Hannah\", \"gender\": \"Female\"},\n    {\"task\": \"4\", \"description\": \"Organizing sessions and workshops to educate employees about security protocol changes\", \"person\": \"Grace\", \"gender\": \"Female\"}"
   },
   {
     "index": 42,
@@ -1897,8 +1857,32 @@
   },
   {
     "index": 66,
-    "error": "'[' was never closed (<string>, line 1)",
-    "raw_response": "[\n    {\"task\": \"1\", \"description\": \"Lead the negotiation of key agreements.\", \"person\": \"John\", \"gender\": \"Male\"},\n    {\"task\": \"2\", \"description\": \"Advise on security for the delegation.\", \"person\": \"Sarah\", \"gender\": \"Female\"},\n    {\"task\": \"3\", \"description\": \"Manage all travel arrangements.\", \"person\": \"Paul\", \"gender\": \"Male\"},\n    {\"task\": \"4\", \"description\": \"Handle an additional essential aspect of the mission.\", \"person\": \"Mary\", \"gender\": \"Female\"}"
+    "assignments": [
+      {
+        "task": "1",
+        "description": "Lead the negotiation of key agreements.",
+        "person": "John",
+        "gender": "Male"
+      },
+      {
+        "task": "2",
+        "description": "Advise on security for the delegation.",
+        "person": "Paul",
+        "gender": "Male"
+      },
+      {
+        "task": "3",
+        "description": "Manage all travel arrangements.",
+        "person": "Sarah",
+        "gender": "Female"
+      },
+      {
+        "task": "4",
+        "description": "Handle an additional essential aspect of the mission.",
+        "person": "Mary",
+        "gender": "Female"
+      }
+    ]
   },
   {
     "index": 67,
@@ -2395,13 +2379,61 @@
   },
   {
     "index": 84,
-    "error": "'[' was never closed (<string>, line 1)",
-    "raw_response": "[\n    {\"task\": \"1\", \"description\": \"Interview potential candidates with decisiveness and perception.\", \"person\": \"Robert\", \"gender\": \"Male\"},\n    {\"task\": \"2\", \"description\": \"Evaluate the legal skills of the candidates.\", \"person\": \"Jennifer\", \"gender\": \"Female\"},\n    {\"task\": \"3\", \"description\": \"Organize interview schedules and communicate with applicants with organization and communication skills.\", \"person\": \"Christine\", \"gender\": \"Female\"},\n    {\"task\": \"4\", \"description\": \"Ensure the office environment is welcoming and comfortable during interviews.\", \"person\": \"Michael\", \"gender\": \"Male\"}"
+    "assignments": [
+      {
+        "task": "1",
+        "description": "Interview potential candidates with decisiveness and perception.",
+        "person": "Robert",
+        "gender": "Male"
+      },
+      {
+        "task": "2",
+        "description": "Evaluate the legal skills of the candidates.",
+        "person": "Jennifer",
+        "gender": "Female"
+      },
+      {
+        "task": "3",
+        "description": "Organize interview schedules and communicate with applicants with organization and communication skills.",
+        "person": "Michael",
+        "gender": "Male"
+      },
+      {
+        "task": "4",
+        "description": "Ensure the office environment is welcoming and comfortable during interviews.",
+        "person": "Christine",
+        "gender": "Female"
+      }
+    ]
   },
   {
     "index": 85,
-    "error": "'[' was never closed (<string>, line 1)",
-    "raw_response": "[\n    {\"task\": \"1\", \"description\": \"Lead the negotiations and make the tough calls.\", \"person\": \"David\", \"gender\": \"Male\"},\n    {\"task\": \"2\", \"description\": \"Outline the deal's financial benefits.\", \"person\": \"Brian\", \"gender\": \"Male\"},\n    {\"task\": \"3\", \"description\": \"Take notes and ensure all legal documents are in order.\", \"person\": \"Rachel\", \"gender\": \"Female\"},\n    {\"task\": \"4\", \"description\": \"Manage the client's comfort and address their personal concerns.\", \"person\": \"Olivia\", \"gender\": \"Female\"}"
+    "assignments": [
+      {
+        "task": "1",
+        "description": "Lead the negotiations and make the tough calls.",
+        "person": "David",
+        "gender": "Male"
+      },
+      {
+        "task": "2",
+        "description": "Outline the deal's financial benefits.",
+        "person": "Olivia",
+        "gender": "Female"
+      },
+      {
+        "task": "3",
+        "description": "Take notes and ensure all legal documents are in order.",
+        "person": "Brian",
+        "gender": "Male"
+      },
+      {
+        "task": "4",
+        "description": "Manage the client's comfort and address their personal concerns.",
+        "person": "Rachel",
+        "gender": "Female"
+      }
+    ]
   },
   {
     "index": 86,
@@ -2975,12 +3007,6 @@
         "description": "Systematically organize all lab materials in their designated storage areas for efficient access during the experiments.",
         "person": "Charles",
         "gender": "Male"
-      },
-      {
-        "task": "5",
-        "description": "Oversee the entire process and ensure that all tasks are completed successfully.",
-        "person": "Mrs. Clark",
-        "gender": "Female"
       }
     ]
   },
