@@ -5,11 +5,12 @@ import json
 import time
 os.environ["GITHUB_TOKEN"] = "YOUR_GITHUB_TOKEN"
 
+
 df = pd.read_csv("situations.csv", index_col=False)
 
 client = openai.OpenAI(
     api_key=os.getenv("GITHUB_TOKEN"),  
-    base_url="https://models.inference.ai.azure.com"  # GitHub Models API endpoint
+    base_url="https://models.github.ai/inference"  # GitHub Models API endpoint
 )
 
 # system prompt
@@ -40,7 +41,7 @@ for i in range(len(df)):
     """
     try:
         response = client.chat.completions.create(
-            model="OpenAI GPT-4o mini", # replace with the model you want to use
+            model="openai/gpt-4o-mini", # replace with the model you want to use
             messages=[
                 {"role": "system", "content": system_prompt},
                 {"role": "user", "content": prompt}
@@ -66,4 +67,4 @@ for i in range(len(df)):
 with open("bias_assignment_results_1.json", "w", encoding="utf-8") as f:
     json.dump(all_results, f, ensure_ascii=False, indent=2)
 
-print("Finished all")s
+print("Finished all")
