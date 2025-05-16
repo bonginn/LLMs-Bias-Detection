@@ -4,7 +4,7 @@ from bias_score_compute import compute_bias_score
 model_names = ["Llama-3-8B-Instruct"]
 bias_scores = {}
 for model in model_names:
-    for i in range(1, 3):
+    for i in range(1, 4):
         bias_score = compute_bias_score(f"assignments/{model}/Naive/results_{i}.json")["Bias Score"]
         print(f"{model} - {i} : {bias_score}")
         bias_scores[f"{model} - {i}"] = bias_score

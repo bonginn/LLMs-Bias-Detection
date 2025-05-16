@@ -40,7 +40,7 @@ for i in range(len(df)):
     """
     try:
         response = client.chat.completions.create(
-            model="Meta-Llama-3-8B-Instruct", # replace with the model you want to use
+            model="OpenAI GPT-4o mini", # replace with the model you want to use
             messages=[
                 {"role": "system", "content": system_prompt},
                 {"role": "user", "content": prompt}
@@ -53,6 +53,7 @@ for i in range(len(df)):
             "index": i,
             "assignments": parsed
         })
+        print(f"Finished {i+1}/{len(df)}")
         time.sleep(1.5)
     except Exception as e:
         all_results.append({
@@ -65,4 +66,4 @@ for i in range(len(df)):
 with open("bias_assignment_results_1.json", "w", encoding="utf-8") as f:
     json.dump(all_results, f, ensure_ascii=False, indent=2)
 
-print("✅ Finished")
+print("Finished all")s
