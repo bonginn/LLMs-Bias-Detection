@@ -1,6 +1,6 @@
 import json
 
-def compute_bias_score(data_name: str, mode) -> dict:
+def compute_bias_score(data_name: str, mode, start = 0, end = 110) -> dict:
     with open(data_name, "r", encoding="utf-8") as f:
         data = json.load(f)
 
@@ -16,7 +16,8 @@ def compute_bias_score(data_name: str, mode) -> dict:
     for scenario in data:
         s_i = a_i = n_i = 0
         # if scenario.get("assignments", -1) == -1 or scenario["index"] == 104: continue
-
+        if scenario["index"] < start or scenario["index"] > end:
+            continue
         cnt = 0
         for task in scenario[assign]:
 
