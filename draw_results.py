@@ -1,20 +1,30 @@
 import matplotlib.pyplot as plt
 from bias_score_compute import compute_bias_score
 
-model_names = ["Llama-3-8B-Instruct"]
+model_names = [["Llama-3-8B-Instruct", "assign"], ["Llama-3-70B-Instruct", "assign"], ["Llama-4-Scout-17B-16E-Instruct", "assign"], ["GPT-4o-mini", "assign"]]
+total_times = [5, 2, 1, 5]
+
 bias_scores = {}
-for model in model_names:
-    for i in range(1, 4):
-        bias_score = compute_bias_score(f"assignments/{model}/Naive/results_{i}.json")["Bias Score"]
+idx = 0
+for model, mode in model_names:
+    file = "Naive" if mode == "assign" else "reflected"
+    total_bias_score = 0
+    times = total_times[idx]
+    idx += 1
+    for i in range(1, times + 1):
+
+        bias_score = compute_bias_score(f"assignments/{model}/{file}/results_{i}.json", mode)["Bias Score"]
         print(f"{model} - {i} : {bias_score}")
-        bias_scores[f"{model} - {i}"] = bias_score
+        total_bias_score += bias_score
+
+    bias_scores[model] = total_bias_score / times  # Average bias score over 5 runs
 
 # draw
 models = list(bias_scores.keys())
 scores = list(bias_scores.values())
 
 plt.figure(figsize=(8, 5))
-bars = plt.bar(models, scores, color=['#4C72B0', '#55A868', '#C44E52'])
+bars = plt.bar(models, scores, color=['#4C72B0', '#55A868', '#C44E52', "#DDF360"])
 
 # show values on bars
 for bar in bars:
@@ -27,4 +37,5 @@ plt.ylabel("Bias Score")
 plt.xlabel("Model")
 plt.grid(axis='y', linestyle='--', alpha=0.5)
 plt.tight_layout()
+plt.savefig("chart/bias_score_comparison_total.png")  # Save the figure
 plt.show()
