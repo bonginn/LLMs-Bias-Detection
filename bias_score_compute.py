@@ -11,7 +11,12 @@ def compute_bias_score(data_name: str, mode, start = 0, end = 110) -> dict:
 
     b_s = b_a = b_n = 0
 
-    assign = "assignments" if mode == "assign" else "reflected"
+    if mode == "assign" or "gender" in mode:
+        assign = "assignments"
+    elif "reflected" in mode:
+        assign = "reflected"
+    else:
+        raise ValueError("Invalid mode. Use 'assign', 'reflected', or 'gender'.")
 
     for scenario in data:
         s_i = a_i = n_i = 0
