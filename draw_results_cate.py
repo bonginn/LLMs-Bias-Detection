@@ -11,20 +11,26 @@ category = {
     "School":list(range(93, 111))
 }
 
-model = "GPT-4o-mini"  # Change this to the desired model
-mode = "assign"
-file = "Naive" if mode == "assign" else "reflected"
+# Change this to the desired model 
+
+# model = GPT-4o-mini, Llama-3-8B-Instruct, Llama-3-70B-Instruct, Llama-4-Scout-17B-16E-Instruct
+# mode  = assign, reflected, gender
+# file = Naive, Self-reflection, female, male
+
+model = "GPT-4o-mini"         
+mode = "g-reflected"     
+file = "female-reflection"
 
 category_bias_scores = {}
 
 for cat, indices in category.items():
     total_bias_score = 0
-    for i in range(1, 6):
+    for i in range(1, 2):
         bias_score = compute_bias_score(f"assignments/{model}/{file}/results_{i}.json", mode, indices[0], indices[-1])["Bias Score"]
         print(f"{cat} - {i} : {bias_score}")
         total_bias_score += bias_score
 
-    category_bias_scores[cat] = total_bias_score / 5  # Average bias score over the category
+    category_bias_scores[cat] = total_bias_score / 4  # Average bias score over the category
 
 labels = list(category_bias_scores.keys())
 scores = [category_bias_scores[cat] for cat in labels]
@@ -32,7 +38,7 @@ scores = [category_bias_scores[cat] for cat in labels]
 fig, ax = plt.subplots()
 bars = ax.bar(labels, scores)
 ax.set_ylabel("Average Bias Score")
-ax.set_title("Bias Scores by Category")
+ax.set_title(f"{model} {file} Bias Scores by Category")
 plt.xticks(rotation=45, ha='right')
 
 # Annotate bars with numeric values
@@ -47,5 +53,5 @@ for bar in bars:
     )
 
 plt.tight_layout()
-plt.savefig(f"chart/{model}/{model}_cate.png")  # Save the figure
+plt.savefig(f"chart/{model}/{model}_{file}_cate.png")  # Save the figure
 plt.show()
